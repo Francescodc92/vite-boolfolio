@@ -1,7 +1,7 @@
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
-import MainComponent from './components/MainComponent.vue';
+import MainComponent from './components/MainComponents/MainComponent.vue';
 export default {
   data(){
     return {}
@@ -20,8 +20,6 @@ export default {
   <MainComponent />
 
   <FooterComponent />
-
-
 </template>
 
 <style scoped>
