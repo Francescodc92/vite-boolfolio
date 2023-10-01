@@ -1,7 +1,8 @@
 <script>
-import HeaderComponent from './components/HeaderComponent.vue';
-import FooterComponent from './components/FooterComponent.vue';
+import HeaderComponent from './components/HeaderComponents/HeaderComponent.vue';
 import MainComponent from './components/MainComponents/MainComponent.vue';
+import FooterComponent from './components/FooterComponents/FooterComponent.vue';
+
 export default {
   data(){
     return {}

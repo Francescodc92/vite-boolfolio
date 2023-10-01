@@ -15,8 +15,8 @@
 
 <template>
   <div class="card">
-    <div class="card-img-wrapper">
-      <img :src="projectObj.preview" :alt="projectObj.title">
+    <div class="card-img-wrapper" v-if="projectObj.full_preview_img">
+      <img :src="projectObj.full_preview_img" :alt="projectObj.title">
     </div>
     <div class="description">
       <h2>
@@ -28,12 +28,12 @@
       </h3>
     </div>
       <div class="action-wrapper">
-        <button href="">vedi</button>
+        <router-link class="link" :to="{name: 'single', params:{id: projectObj.id}}">vedi</router-link>
       </div>
   </div>
 </template>
 
-<style >
+<style scoped >
   .card {
     width: calc((100% - 60px)/4);
     margin-block: 20px;
@@ -75,7 +75,7 @@
     padding: 10px 0;
   }
 
-  .card button {
+  .card .link {
     padding: 15px 30px;
     border-radius: 10px;
     background-color: aquamarine;
@@ -92,7 +92,7 @@
                 color 200ms ease-in-out;
   }
 
-  .card button:hover {
+  .card .link:hover {
     background-color: rgb(14, 131, 92);
     color: #fff;
   }

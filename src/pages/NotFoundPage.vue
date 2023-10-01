@@ -1,15 +1,16 @@
 <script>
-export default {
-  
-}
+  export default {
+   
+  }
 </script>
 
 <template>
   <div>
-    header
+    <h1>Pagina non trovata </h1>
+    
   </div>
 </template>
 
 <style >
-  
+
 </style>
